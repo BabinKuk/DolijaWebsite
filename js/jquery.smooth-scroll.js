@@ -1,9 +1,4 @@
-/*!
- * Smooth Scroll - v1.4.13 - 2013-11-02
- * https://github.com/kswedberg/jquery-smooth-scroll
- * Copyright (c) 2013 Karl Swedberg
- * Licensed MIT (https://github.com/kswedberg/jquery-smooth-scroll/blob/master/LICENSE-MIT)
- */
+/* Smooth Scroll*/
 
 (function($) {
 var version = '1.4.13',
@@ -24,11 +19,11 @@ var version = '1.4.13',
       scrollTarget: null,
 
       // fn(opts) function to be called before scrolling occurs.
-      // `this` is the element(s) being scrolled
+      // 'this' is the element(s) being scrolled
       beforeScroll: function() {},
 
       // fn(opts) function to be called after scrolling occurs.
-      // `this` is the triggering element
+      // 'this' is the triggering element
       afterScroll: function() {},
       easing: 'swing',
       speed: 400,

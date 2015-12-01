@@ -160,4 +160,3 @@ function initModalPortfolioSlider() {
 $('#portofolioModal').on('shown.bs.modal', function () {
     initModalPortfolioSlider();
 })
-
