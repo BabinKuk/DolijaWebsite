@@ -169,7 +169,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-a { /*color: #353535*/ color: #fff; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a { color: #fff; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { /*color: #8c9398;*/ word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
@@ -219,10 +219,10 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 /* ==========================================================================
 intro
 ========================================================================== */
-.intro { /*background: url('../img/olive-oil.jpg') no-repeat center center;*/background: #5c5423 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 65px 0; height: auto; }
+.intro { /*background: url('../img/kolaz.jpg') no-repeat center center;*/background: #5c5423 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 65px 0; height: auto; }
 .intro h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .intro h1 span { color: #a1a9b0; display: inline-block; }
-.intro p { letter-spacing: 1px; color: #fff;}
+.intro p { letter-spacing: 1px; color: #fff; /*color: #5c5423;*/}
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
@@ -252,6 +252,15 @@ Swag
 .swag { background: url('../img/ulje-masline-stol-2-dark-3.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
 .swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
+.down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
+.down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
+
+/* ==========================================================================
+featuresHeader
+========================================================================== */
+.featuresHeader { background: url('../img/kolaz_zeleno.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
+.featuresHeader h1 { color: #242830; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.featuresHeader h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
 
@@ -316,6 +325,8 @@ CTA
 .ignite-cta { background-color: #242830; padding: 70px 0; }
 .ignite-btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .ignite-btn:hover, .ignite-btn:focus { color: #3dc9b3; border: solid 1px #3dc9b3; }
+.ignite-btn-no-border { display: inline-block; padding: 5px 40px; color: #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+.ignite-btn-no-border:hover, .ignite-btn-no-border:focus { color: #3dc9b3; }
 /* ==========================================================================
 Team
 ========================================================================== */
