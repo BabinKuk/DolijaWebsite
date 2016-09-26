@@ -529,7 +529,8 @@
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-envelope"></i><span>Email</span></h2>
-                  <p><a id="mail-address" href="mailto:dolija@dolija.com">dolija@dolija.com</a></p>
+                  <!--p><a id="mail-address" href="mailto:dolija@dolija.com">dolija@dolija.com</a></p-->
+				  <p><a id="mail-address" data-target="#contactModal" data-toggle="modal">dolija@dolija.com</a></p>
                 </div>
               </div>
             </div>
@@ -540,7 +541,7 @@
                   <!--li><a href="#" class="social-btn"><i class="fa fa-google-plus"></i></a></li-->
                   <!--li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li-->
                   <!--li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li-->
-                  <li><a href="mailto:dolija@dolija.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                  <li><a data-target="#contactModal" data-toggle="modal" class="social-btn"><i class="fa fa-envelope"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -574,7 +575,7 @@
             <div class="row">
               <div class="col-md-12">
                 <ul class="legals text-center">
-                  <li>&copy; 2015 Dolija 08 d.o.o.  Tutti i diritti riservati. </li>
+                  <li>&copy; 2015 Dolija 08 d.o.o.  Tutti i diritti riservati.  <span><a href="mailto:dolija@dolija.com">dolija@dolija.com</a></span></li>
                 </ul>
               </div>
             </div>
@@ -1071,6 +1072,38 @@
           </div>
         </div>
 
+		<!-- Modal email -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header my-modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="my-modal-close" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="contactModalLabel">Contattateci !</h4>
+              </div>
+              <div class="modal-body">
+                <form id="contact-form" name="contact-form" method="post" action="#">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Nome e Cognome" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                  </div>
+				  <div class="form-group">
+				    <input type="text" name="subject" id="subject" class="form-control" placeholder="Titolo" required>
+				  </div>
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="8" placeholder="Messaggio" required></textarea>
+                  </div>
+                  <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default">Invia</button>
+                </form>
+              </div>
+              <div class="modal-footer my-modal-footer">
+                <button type="button" id="contact-modal-close" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -1081,5 +1114,8 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/mapFunction.js"></script>
+		<!-- Contact Form JavaScript -->
+		<!--script src="js/jqBootstrapValidation.js"></script-->
+		<script src="js/contact.js"></script>
       </body>
     </html>

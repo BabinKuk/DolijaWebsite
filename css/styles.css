@@ -475,3 +475,12 @@ Modal
     margin: 20px 0 20px;
     border-bottom: 1px solid #eee;
 }
+
+#contact-form button {
+	background-color: #3dc9b3;
+	color: #fff;
+}
+#contact-form button:hover, #contact-form button:focus {
+	color: #ccc;
+	background: rgba(61, 201, 179, 1);
+	}

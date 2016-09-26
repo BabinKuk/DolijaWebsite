@@ -372,7 +372,16 @@
                     <ul class="slides award-slides">
 					  <li>
                         <h1 class="arrow">Nagrade 2016</h1>
-                        <div class="nagrade-post-info">
+                        <!--div class="nagrade-post-info">
+                          <p>
+                            <strong>Flos Olei</strong>
+                          </p>
+                          <div class="row">
+                            <i class="col-md-1 col-xs-1 fa fa-chevron-right"></i>
+                            <span class="col-md-11 col-xs-11 nagrade-post-info-item"> Istarska bjelica uvrštena u poznati svjetski vodič extradjevičanskih maslinovih ulja Flos Olei</span>
+                          </div>
+                        </div-->
+						<div class="nagrade-post-info">
                           <p>
                             <strong>Maslina</strong>
                           </p>
@@ -530,7 +539,8 @@
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-envelope"></i><span>Email</span></h2>
-                  <p><a id="mail-address" href="mailto:dolija@dolija.com">dolija@dolija.com</a></p>
+                  <!--p><a id="mail-address" href="mailto:dolija@dolija.com">dolija@dolija.com</a></p-->
+				  <p><a id="mail-address" data-target="#contactModal" data-toggle="modal">dolija@dolija.com</a></p>
                 </div>
               </div>
             </div>
@@ -541,7 +551,7 @@
                   <!--li><a href="#" class="social-btn"><i class="fa fa-google-plus"></i></a></li-->
                   <!--li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li-->
                   <!--li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li-->
-                  <li><a href="mailto:dolija@dolija.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                  <li><a data-target="#contactModal" data-toggle="modal" class="social-btn"><i class="fa fa-envelope"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -549,23 +559,6 @@
             <div class="row contact-details">
               <div class="col-md-12">
                 <div id="google-map" style="height:400px" data-latitude="44.83470644" data-longitude="13.86690795"></div>
-
-                <!--h3>Javite nam se!</h3-->
-                <!--form>
-                  <div class="form-group">
-                    <label>Ime i prezime</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" class="form-control">
-                  </div>
-                    <div class="form-group">
-                    <label>Poruka</label>
-                   <textarea class="form-control"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Pošalji</button>
-                </form-->
               </div>
             </div>
           </div>
@@ -575,7 +568,7 @@
             <div class="row">
               <div class="col-md-12">
                 <ul class="legals text-center">
-                  <li>&copy; 2015 Dolija 08 d.o.o.  Sva prava pridržana.</li>
+                  <li>&copy; 2015 Dolija 08 d.o.o.  Sva prava pridržana.  <span><a href="mailto:dolija@dolija.com">dolija@dolija.com</a></span></li>
                 </ul>
               </div>
             </div>
@@ -647,7 +640,33 @@
                   </div>
                   <div id="2016Tab" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2016Heading">
                     <div class="panel-body">
-                      <div class="row nagrade-item">
+                      <!--div class="row nagrade-item">
+                        <div class="col-md-2 col-xs-2">
+                          <img class="img-responsive img-thumbnail pull-left" src="img/FlosOlei2017.jpg">
+                        </div>
+                        <div class="col-md-10 col-xs-10">
+                          <div class="post-info">
+                            <p>
+                              <strong>Flos Olei</strong>
+                            </p>
+                            <p class="post-info-right">
+                              <i class="glyphicon glyphicon-time"></i> 19.9.2016.
+                            </p>
+                          </div>
+                          <ul class="nagrade-list">
+                            <li>
+                              <div class="row">
+                                <i class="col-md-1 col-xs-1 fa fa-chevron-right"></i>
+                                <span class="col-md-11 col-xs-11 nagrade-list-item">
+								  Istarska bjelica uvrštena u poznati svjetski vodič extradjevičanskih maslinovih ulja Flos Olei
+								  <a class="right-arrow-btn" href="http://www.marco-oreggia.com/"><i class="fa fa-chevron-right fa-arrow-nagrade"></i></a>
+								</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div-->
+					  <div class="row nagrade-item">
                         <div class="col-md-2 col-xs-2">
                           <img class="img-responsive img-thumbnail pull-left" src="img/ulikaMedulin.jpg">
                         </div>
@@ -1071,6 +1090,38 @@
             </div>
           </div>
         </div>
+		
+		<!-- Modal email -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header my-modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="my-modal-close" aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="contactModalLabel">Javite nam se!</h4>
+              </div>
+              <div class="modal-body">
+                <form id="contact-form" name="contact-form" method="post" action="#">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ime i prezime" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                  </div>
+				  <div class="form-group">
+				    <input type="text" name="subject" id="subject" class="form-control" placeholder="Naslov" required>
+				  </div>
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="8" placeholder="Poruka" required></textarea>
+                  </div>
+                  <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default">Pošalji</button>
+                </form>
+              </div>
+              <div class="modal-footer my-modal-footer">
+                <button type="button" id="contact-modal-close" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>
@@ -1082,5 +1133,8 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/mapFunction.js"></script>
+		<!-- Contact Form JavaScript -->
+		<!--script src="js/jqBootstrapValidation.js"></script-->
+		<script src="js/contact.js"></script>
       </body>
     </html>
