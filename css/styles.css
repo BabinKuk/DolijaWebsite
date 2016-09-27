@@ -190,6 +190,7 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
 .my-modal-footer {background-color: #333; }
 .my-modal-footer button { background-color: #3dc9b3; color: #fff;}
 .my-modal-footer button:hover, .my-modal-footer button:focus { color: #ccc; background: rgba(61, 201, 179, 1);}
+
 /* ==========================================================================
 Navigation
 ========================================================================== */
@@ -475,7 +476,6 @@ Modal
     margin: 20px 0 20px;
     border-bottom: 1px solid #eee;
 }
-
 #contact-form button {
 	background-color: #3dc9b3;
 	color: #fff;
@@ -483,4 +483,10 @@ Modal
 #contact-form button:hover, #contact-form button:focus {
 	color: #ccc;
 	background: rgba(61, 201, 179, 1);
-	}
+}
+.addtnl-info {
+	float: none;
+}
+.addtnl-info i {
+	color: #fff;
+}
