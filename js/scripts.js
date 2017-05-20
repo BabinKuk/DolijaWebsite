@@ -144,8 +144,8 @@ $(window).load(function() {
 
 /***************** initialize Flexslider in Modal (when shown only!!!!) ******************/
 
-function initModalPortfolioSlider() {
-	$('#modalPortfolioSlider').flexslider({
+function initBuzaPortfolioSlider() {
+	$('#buzaPortfolioSlider').flexslider({
 		animation: "slide",
 		directionNav: false,
 		controlNav: true,
@@ -157,6 +157,108 @@ function initModalPortfolioSlider() {
 	});
 }
 
-$('#portofolioModal').on('shown.bs.modal', function () {
-    initModalPortfolioSlider();
+$('#buzaModal').on('shown.bs.modal', function () {
+    initBuzaPortfolioSlider();
+})
+
+function initBjelicaPortfolioSlider() {
+	$('#bjelicaPortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#bjelicaModal').on('shown.bs.modal', function () {
+    initBjelicaPortfolioSlider();
+})
+
+function initLeccinoPortfolioSlider() {
+	$('#leccinoPortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#leccinoModal').on('shown.bs.modal', function () {
+    initLeccinoPortfolioSlider();
+})
+
+function initPendolinoPortfolioSlider() {
+	$('#pendolinoPortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#pendolinoModal').on('shown.bs.modal', function () {
+    initPendolinoPortfolioSlider();
+})
+
+function initKarbonacaPortfolioSlider() {
+	$('#karbonacaPortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#karbonacaModal').on('shown.bs.modal', function () {
+    initKarbonacaPortfolioSlider();
+})
+
+function initRosinjolaPortfolioSlider() {
+	$('#rosinjolaPortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#rosinjolaModal').on('shown.bs.modal', function () {
+    initRosinjolaPortfolioSlider();
+})
+
+function initRafePortfolioSlider() {
+	$('#rafePortfolioSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
+}
+
+$('#rafeModal').on('shown.bs.modal', function () {
+    initRafePortfolioSlider();
 })

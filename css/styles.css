@@ -220,7 +220,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 /* ==========================================================================
 intro
 ========================================================================== */
-.intro { /*background: url('../img/kolaz.jpg') no-repeat center center;*/background: #5c5423 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 65px 0; height: auto; }
+.intro { /*background: url('../img/kolaz.jpg') no-repeat center center;*/background: #4e4a32 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 65px 0; height: auto; }
 .intro h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .intro h1 span { color: #a1a9b0; display: inline-block; }
 .intro p { letter-spacing: 1px; color: #fff; /*color: #5c5423;*/}
@@ -259,7 +259,7 @@ Swag
 /* ==========================================================================
 featuresHeader
 ========================================================================== */
-.featuresHeader { background: url('../img/kolaz_zeleno.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
+.featuresHeader { background: url('../img/ugov_02.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
 .featuresHeader h1 { color: #242830; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .featuresHeader h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
@@ -366,7 +366,7 @@ ul.legals li:last-child::after { content: ""; }
 FlexSlider Custom CSS
 ========================================================================== */
 #awardsSlider { margin-top: 50px; }
-ul.slides li { margin-bottom: 0px; }
+ul.slides li { margin-bottom: 0; }
 ul.slides h2 { text-align: center; }
 ul.slides p { text-align: left; }
 ul.slides li > a.right-arrow-btn { float: none; }
@@ -417,6 +417,9 @@ Waypoints
 /* ==========================================================================
 Modal
 ========================================================================== */
+.modal-portfolio-li {
+	padding-bottom: 40px;
+}
 .modal-img-ulje {
 	/*margin: 20px !important;*/
 }
