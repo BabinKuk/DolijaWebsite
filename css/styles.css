@@ -235,7 +235,25 @@ about
 .about p { margin: 50px 0 0; }
 h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 .about-text { padding: 90px 90px 100px;}
-#carouselGallery li { display: none;}
+#carouselGallery li, #carouselShopGallery li {  /*carousel indicators*/
+	/*display: none;*/
+	width: 13px;
+	height: 13px;
+	display: inline block;
+	margin: 0 6px;
+	background: #5c696a;
+	background: transparent;
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	border: 3px solid #c9cbca;
+}
+#carouselGallery li.active, #carouselShopGallery li.active {
+	background: #c9cbca;
+}
 /* ==========================================================================
 Features
 ========================================================================== */
@@ -340,6 +358,7 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #242830; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
 .social-btn:hover, .social-btn:focus { background: #aeb87a/*#3dc9b3*/; color: #fff; }
 .social { margin-top: 25px }
+.maps-cust-padding { padding-top: 10px; padding-bottom: 10px;}
 
 /* ==========================================================================
 Contact
@@ -350,8 +369,8 @@ Contact
 .contact-details h2 { font-size: 20px; }
 .contact-details h2 span { display: block; color: #aeb87a/*#3dc9b3*/; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
 .contact-wrap { position: relative; }
-#mail-address{color: #333;}
-#mail-address:hover, #mail-address:focus { color: #aeb87a/*#3dc9b3*/; text-decoration: none; }
+#mail-address, #shop-address, #home-address{color: #333;}
+#mail-address:hover, #mail-address:focus, #shop-address:hover, #shop-address:focus, #home-address:hover, #home-address:focus { color: #aeb87a/*#3dc9b3*/; text-decoration: none; }
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -407,6 +426,26 @@ ul.slides li > a.right-arrow-btn { float: none; }
 	padding-left: 0;
 	text-indent: inherit;
 }
+
+/* ==========================================================================
+Google Maps infowindow
+========================================================================== */
+#infoWindowContent>#bodyContent {
+	margin-top: 15px;
+	margin-right: 15px;
+}
+#infoWindowContent>#bodyContent p {
+	font-size: 13px;
+	font-weight: 300;
+	color: #333;
+	text-align: left;
+	line-height: 14px;
+	margin: 0.5em 0;
+}
+#infoWindowContent>#bodyContent p>a {
+	color: #428bca;
+}
+
 /* ==========================================================================
 Waypoints
 ========================================================================== */
