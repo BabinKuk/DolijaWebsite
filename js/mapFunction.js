@@ -60,7 +60,7 @@
 			'<p>Narodni trg 3</p>' +
 			'<p>52100 Pula</p>' +
 			'<p>Croatia</p>' +
-            '<p><a href="https://www.google.hr/maps/place/Dolija+Shop+Extra+Virgin+Olive+Oil/@44.8667156,13.8480431,18.5z/data=!4m5!3m4!1s0x477cd321b5de8127:0x77303e5dda2fdbcc!8m2!3d44.8667632!4d13.8487043">' +
+            '<p><a href="https://www.google.hr/maps/place/Dolija+Shop+Extra+Virgin+Olive+Oil/@44.8665722,13.8488868,19.25z/data=!4m5!3m4!1s0x0:0x77303e5dda2fdbcc!8m2!3d44.8664818!4d13.849316">' +
 			'View on Google Maps</a></p>'+
             '</div>'+
             '</div>';
