@@ -330,6 +330,10 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
   text-align: center;
   float: right;
 }
+.portfolio-strong-custom {
+	text-align: center;
+	margin-bottom: 20px;
+}
 /* ==========================================================================
 Subscribe
 ========================================================================== */
@@ -461,8 +465,17 @@ Modal
 .modal-portfolio-li {
 	padding-bottom: 40px;
 }
-.modal-img-ulje {
-	/*margin: 20px !important;*/
+.modal-portfolio-body {
+	padding: 30px 30px 10px 30px;
+}
+.modal-portfolio-header {
+	text-align: center;
+}
+.modal-portfolio-slides {
+	margin-bottom: 30px;
+}
+.portfolio-desc {
+	margin-bottom: 30px;
 }
 .modal-desc-ulje {
 	padding: 0px 20px !important;
