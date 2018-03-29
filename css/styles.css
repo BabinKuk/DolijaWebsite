@@ -225,7 +225,7 @@ intro
 .intro { /*background: url('../img/kolaz.jpg') no-repeat center center;*/background: #4e4a32 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 65px 0; height: auto; }
 .intro h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .intro h1 span { color: #a1a9b0; display: inline-block; }
-.intro p { letter-spacing: 1px; color: #fff; /*color: #5c5423;*/}
+.intro p { letter-spacing: 1px; color: #fff; font-size: 16px; /*color: #5c5423;*/}
 .learn-more-btn { background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
@@ -279,7 +279,7 @@ Swag
 /* ==========================================================================
 featuresHeader
 ========================================================================== */
-.featuresHeader { background: url('../img/ugov_02.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
+.featuresHeader { background: url('../img/dolija-etiketa.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
 .featuresHeader h1 { color: #242830; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .featuresHeader h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: /*rgba(61, 201, 179, 0.8)*/rgba(174, 184, 122, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
@@ -457,7 +457,7 @@ Waypoints
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
-.wp3 { background: url('../img/medalje_1.jpg') no-repeat center center; background-position: 0px 0px; height: 100%; }
+.wp3 { background: url('../img/medalje-1.jpg') no-repeat center center; background-position: 0px 0px; height: 100%; }
 
 /* ==========================================================================
 Modal
