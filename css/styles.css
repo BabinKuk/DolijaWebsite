@@ -226,15 +226,15 @@ intro
 .intro h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .intro h1 span { color: #a1a9b0; display: inline-block; }
 .intro p { letter-spacing: 1px; color: #fff; font-size: 16px; /*color: #5c5423;*/}
-.learn-more-btn { background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
-.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
+.learn-more-btn { background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #959b75; -moz-box-shadow: 0px 3px 0px 0px #959b75; box-shadow: 0px 3px 0px 0px #959b75; margin: 50px 0 0; font-weight: bold; }
+.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(149, 155, 117, 1); color: #fff; }
 /* ==========================================================================
 about
 ========================================================================== */
 .about { background: #f3f5f8; }
-.about p { margin: 50px 0 0; }
+.about p { margin: 80px 0 0; }
 h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
-.about-text { padding: 90px 90px 100px;}
+.about-text { padding: 90px 90px 90px;}
 #carouselGallery li, #carouselShopGallery li {  /*carousel indicators*/
 	/*display: none;*/
 	width: 13px;
@@ -363,7 +363,11 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .social-btn:hover, .social-btn:focus { background: #aeb87a/*#3dc9b3*/; color: #fff; }
 .social { margin-top: 25px }
 .maps-cust-padding { padding-top: 10px; padding-bottom: 10px;}
-
+/* ==========================================================================
+Shop
+========================================================================== */
+.clients { color: #aeb87a; /*-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;*/ }
+.clients:hover, .clients:focus { color: #959b75; /*text-decoration: none;*/ }
 /* ==========================================================================
 Contact
 ========================================================================== */
