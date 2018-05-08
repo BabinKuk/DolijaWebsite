@@ -275,7 +275,7 @@ Swag
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: /*rgba(61, 201, 179, 0.8)*/rgba(174, 184, 122, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); }
-
+.swag h1.ignite-btn-no-border { margin: 20px 0; }
 /* ==========================================================================
 featuresHeader
 ========================================================================== */
@@ -379,6 +379,12 @@ Contact
 .contact-wrap { position: relative; }
 #mail-address, #shop-address, #home-address{color: #333;}
 #mail-address:hover, #mail-address:focus, #shop-address:hover, #shop-address:focus, #home-address:hover, #home-address:focus { color: #aeb87a/*#3dc9b3*/; text-decoration: none; }
+/* ==========================================================================
+Partners
+========================================================================== */
+#partners { padding: 40px 0 40px 0;}
+h1.partners-header { color: #fff; }
+.partners-row { margin-top: 40px; }
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -550,4 +556,40 @@ Modal
 }
 .addtnl-info i {
 	color: #fff;
+}
+.carousel-content {
+    color:#333;
+    /*display:flex;
+	align-items:center;*/
+	padding-top: 20px;
+}
+.carousel-content h2 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.panel-dekalog {
+	margin: 10px !important;
+	border-radius: 4px;
+}
+
+.my-carousel-control {
+	background-color: #f3f5f8;
+	border-color: #ddd;
+	opacity: 1;
+	width: 10%;
+	color: #aeb87a;
+	text-shadow: none;
+}
+.my-carousel-control.right {
+	border-left: 2px solid #ddd;
+	background-image: none;
+	/*margin: auto;*/
+	/*text-align: center;*/
+}
+.my-carousel-control.left {
+	border-right: 2px solid #ddd;
+	background-image: none;
+	/*margin: auto;*/
+	/*text-align: center;*/
 }

@@ -51,10 +51,11 @@ $(function() {
 
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-
+			console.log(location.pathname + ', ' + location.hostname);
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
+			console.log(target, target.selector);
+			if (target.length && target.selector != '#carousel-example') {
 				$('html,body').animate({
 					scrollTop: target.offset().top
 				}, 2000);
@@ -262,3 +263,25 @@ function initRafePortfolioSlider() {
 $('#rafeModal').on('shown.bs.modal', function () {
     initRafePortfolioSlider();
 })
+
+$('#dekalogModal').on('shown.bs.modal', function () {
+	setCarouselHeight('#carousel-example');
+})
+
+
+function setCarouselHeight(id) {
+	var slideHeight = [];
+	console.log('set carousel height '+ id);
+	$(id+' .item').each(function() {
+		// add all slide heights to an array
+		slideHeight.push($(this).height());
+	});
+	console.log(slideHeight.length, slideHeight);
+	// find the tallest item
+	max = Math.max.apply(null, slideHeight);
+
+	// set the slide's height
+	$(id+' .carousel-content').each(function() {
+		$(this).css('height',max+'px');
+	});
+}
