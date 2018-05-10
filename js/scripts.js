@@ -271,12 +271,12 @@ $('#dekalogModal').on('shown.bs.modal', function () {
 
 function setCarouselHeight(id) {
 	var slideHeight = [];
-	console.log('set carousel height '+ id);
+	//console.log('set carousel height '+ id);
 	$(id+' .item').each(function() {
 		// add all slide heights to an array
 		slideHeight.push($(this).height());
 	});
-	console.log(slideHeight.length, slideHeight);
+	//console.log(slideHeight.length, slideHeight);
 	// find the tallest item
 	max = Math.max.apply(null, slideHeight);
 
