@@ -51,11 +51,11 @@ $(function() {
 
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-			console.log(location.pathname + ', ' + location.hostname);
+			//console.log(location.pathname + ', ' + location.hostname);
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			console.log(target, target.selector);
-			if (target.length && target.selector != '#carousel-example') {
+			//console.log(target, target.selector);
+			if (target.length && target.selector != '#carousel-dekalog') {
 				$('html,body').animate({
 					scrollTop: target.offset().top
 				}, 2000);
@@ -265,14 +265,13 @@ $('#rafeModal').on('shown.bs.modal', function () {
 })
 
 $('#dekalogModal').on('shown.bs.modal', function () {
-	setCarouselHeight('#carousel-example');
+	setCarouselHeight('#carousel-dekalog');
 })
-
 
 function setCarouselHeight(id) {
 	var slideHeight = [];
 	//console.log('set carousel height '+ id);
-	$(id+' .item').each(function() {
+	$(id + ' .item').each(function() {
 		// add all slide heights to an array
 		slideHeight.push($(this).height());
 	});
@@ -281,7 +280,7 @@ function setCarouselHeight(id) {
 	max = Math.max.apply(null, slideHeight);
 
 	// set the slide's height
-	$(id+' .carousel-content').each(function() {
-		$(this).css('height',max+'px');
+	$(id + ' .carousel-content').each(function() {
+		$(this).css('height',max + 'px');
 	});
 }
