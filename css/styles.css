@@ -366,8 +366,8 @@ ul.social-buttons li:last-child { margin-right: 0; }
 /* ==========================================================================
 Shop
 ========================================================================== */
-.clients { color: #aeb87a; /*-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;*/ }
-.clients:hover, .clients:focus { color: #959b75; /*text-decoration: none;*/ }
+.my-cust-link { color: #aeb87a; /*-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;*/ }
+.my-cust-link:hover, .my-cust-link:focus { color: #959b75; /*text-decoration: none;*/ }
 /* ==========================================================================
 Contact
 ========================================================================== */
