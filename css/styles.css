@@ -173,7 +173,7 @@ Global Styles
 a { color: #fff; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #aeb87a/*#3dc9b3*/; text-decoration: none; }
 p { /*color: #8c9398;*/ word-spacing: 1px; line-height: 25px; font-size: 14px; }
-h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
+h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 h2::after { content: " "; border: solid 2px #aeb87a/*#3dc9b3*/; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 90px }
 .dark-bg { background: #f3f5f8; }
@@ -233,7 +233,7 @@ about
 ========================================================================== */
 .about { background: #f3f5f8; }
 .about p { margin: 80px 0 0; }
-h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 2px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 .about-text { padding: 90px 90px 90px;}
 #carouselGallery li, #carouselShopGallery li {  /*carousel indicators*/
 	/*display: none;*/
@@ -352,6 +352,12 @@ CTA
 .ignite-btn:hover, .ignite-btn:focus { color: #aeb87a/*#3dc9b3*/; border: solid 1px #aeb87a/*#3dc9b3*/; }
 .ignite-btn-no-border { display: inline-block; padding: 5px 40px; color: #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .ignite-btn-no-border:hover, .ignite-btn-no-border:focus { color: #aeb87a/*#3dc9b3*/; }
+.my-collapse-thumbnail { margin-bottom: 0px; padding: 2px; }
+.my-collapse-desc { padding: 0 50px; line-height: 25px; }
+.dark-well { margin-top: 20px; background: #4e4a32; color: #fff; text-align: left; letter-spacing: 1px; }
+.dark-well:hover, .dark-well:focus { color: #aeb87a; border: solid 1px #aeb87a; }
+.my-collapse-thumbnail:hover, .my-collapse-thumbnail:focus { background: #aeb87a; }
+#doliumCollapseBtn h1 { letter-spacing: 5px; }
 /* ==========================================================================
 Team
 ========================================================================== */
@@ -379,6 +385,7 @@ Contact
 .contact-wrap { position: relative; }
 #mail-address, #shop-address, #home-address{color: #333;}
 #mail-address:hover, #mail-address:focus, #shop-address:hover, #shop-address:focus, #home-address:hover, #home-address:focus { color: #aeb87a/*#3dc9b3*/; text-decoration: none; }
+#contact .container { padding-top: 90px; }
 /* ==========================================================================
 Partners
 ========================================================================== */
