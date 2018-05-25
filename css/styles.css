@@ -192,7 +192,7 @@ button.close {opacity: 1;}
 .my-modal-footer {background-color: #333; }
 .my-modal-footer button { background-color: #aeb87a/*#3dc9b3*/; color: #fff;}
 .my-modal-footer button:hover, .my-modal-footer button:focus { color: #ccc; background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1);}
-.cust-row { margin-right: 0px; }
+.cust-row { margin-right: auto; margin-left: auto; }
 /* ==========================================================================
 Navigation
 ========================================================================== */
@@ -340,10 +340,16 @@ Subscribe
 .subscribe { background: url('../img/keyboard-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 80px; }
 .subscribe h1 { color: #fff; margin-bottom: 40px; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .subscribe h1 span { display: block; font-size: 25px; text-transform: uppercase; font-weight: bold; margin-top: 20px; margin-bottom: 60px; letter-spacing: 3px; }
-.subscribe input[type=text] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #fff; padding: 20px; width: 30%; color: #fff; }
-.subscribe input[type=submit] { background: rgba(61, 201, 179, 0.5); border: solid 1px rgba(61, 201, 179, 0.5); padding: 20px; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+.subscribe input[type=text], .subscribe input[type=email] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #fff; padding: 20px; width: 30%; color: #fff; }
+.subscribe input[type=submit] { background: /*rgba(61, 201, 179, 0.5)*/ rgba(174, 184, 122, 0.8); border: solid 1px rgba(61, 201, 179, 0.5); padding: 20px; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .subscribe input[type=submit]:hover { background: /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); border: solid 1px /*rgba(61, 201, 179, 1)*/rgba(174, 184, 122, 1); color: #fff; }
-.subscribe p { color:#fff; margin-bottom: 40px; }
+.subscribe p { color:#fff; margin-bottom: 20px; }
+#subscribe.subscribe { background: #242830; }
+.subscribe-submit-msg { width: 53%; margin-left: auto; margin-right: auto; }
+p.subscribe-submit-msg { color: #a94442; }
+.subscribe h1 span.subscribe-header { margin-bottom: 20px; }
+.subscribe p.subscribe-desc { text-transform: uppercase; font-size: 14px; letter-spacing: 2px; padding-bottom: 20px; font-weight: bold; }
+.subscribe-confirm a { text-decoration: underline; }
 /* ==========================================================================
 CTA
 ========================================================================== */
@@ -599,4 +605,13 @@ Modal
 	background-image: none;
 	/*margin: auto;*/
 	/*text-align: center;*/
+}
+
+.newsletter-terms {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.newsletter-terms p {
+	line-height: 18px;
 }

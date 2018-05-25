@@ -283,4 +283,4 @@ function setCarouselHeight(id) {
 	$(id + ' .carousel-content').each(function() {
 		$(this).css('height',max + 'px');
 	});
-}
+} 
