@@ -380,7 +380,7 @@
       </div>
     </section>
         
-		<div class="ignite-cta text-center">
+		<!--div class="ignite-cta text-center">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -388,7 +388,23 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
+
+    <section id="subscribe" class="subscribe text-center">
+      <div class="container">
+        <h1><i class="fa fa-paper-plane"></i></h1>
+        <h1 class="subscribe-header">Let's keep in touch</h1>
+        <p class="subscribe-desc">Join our mailing list, get the latest news and never miss the exclusive offers</p>
+        <form id="subscribe-form" name="subscribe-form" method="post" action="#">
+          <input type="email" name="subscribe-email" id="subscribe-email" value="" placeholder="" required>
+          <input type="submit" id="subscribe-btn" name="subscribe-btn" value="Send">
+          <p class="subscribe-confirm">
+            <input type="checkbox" aria-label="Terms Of Use" required>
+            <span>I read and accept <a data-target="#newsletterModal" data-toggle="modal">Terms Of Service</a></span>
+          </p>
+        </form>
+      </div>
+    </section>
 
     <section class="text-center" id="olive-oil-awards">
       <div class="container-fluid nopadding awards-services">
@@ -1966,7 +1982,7 @@
               <div class="form-group">
                 <textarea name="message" id="message" class="form-control" rows="8" placeholder="Message Text" required></textarea>
               </div>
-              <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default submit-btn">Send</button>
+              <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default submit-btn" value="Send">Send</button>
             </form>
           </div>
           <div class="modal-footer my-modal-footer">
@@ -2102,6 +2118,49 @@
             
           <div class="modal-footer my-modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header my-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="my-modal-close" aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="newsletterModalLabel">Newsletter – Information on the processing of personal data</h4>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center">Newsletter – Information on the processing of personal data</h2>
+            <div class="newsletter-terms">
+              <p>Dolija.com web site, owned by Dolija 08 d.o.o., Veliki Vareški 1, 52208 Krnica, Croatia, guarantees that all data you shared with us will be processed in compliance with the EU Regulation 2016/679 on the protection of personal data (GDPR) according to the principles listed below:</p>
+              <div>
+                <!--p><strong>1. Koji Vaši podaci nam trebaju i zašto?</strong></p-->
+                <p>1.	We need your e-mail address to send you periodic updates on our activities and promotional offers and we will use it only for this purpose.</p>
+                <!--p><strong>2. Tko sve ima pristup Vašim podacima?</strong></p-->
+                <p>2.	Access to your personal data is permitted only to our employees who work on maintaining the website. The aforementioned employees are familiar with the procedures of protection of personal data and are obliged to treat it accordingly.</p>
+                <!--p><strong>3. Da li ćemo Vaše podatke dijeliti s drugima?</strong></p-->
+                <p>3. We will not share, sell or transfer your data to third parties for any reason other than those listed above.</p>
+                <!--p><strong>4. Koliko dugo ćemo čuvati Vaše podatke?</strong></p-->
+                <p>4. We will keep your data in our archive until you ask us to delete it.</p>
+                <!--p><strong>5. Kako smo došli do Vaših podataka?</strong></p-->
+                <p>5. We have obtained your data exclusively because you have provided it to us. Dolija 08 d.o.o., does not collect, purchase or receive your personal data from third parties.</p>
+                <!--p><strong>6. Da li i možete zatražiti da zauvijek uklonimo Vaše podatke i povući svoju privolu za njihovo korištenje?</strong></p-->
+                <p>6. Whenever you want, you can withdraw your permission to use your personal data and / or ask us to delete all your data from our archive. Simply send an e-mail to <strong>dolija@dolija.com</strong> and your personal data will be deleted as soon as possible.</p>
+                <!--p><strong>7. Da li možete vidjeti koje Vaše osobne podatke imamo i možete li ih ispraviti?</strong></p-->
+                <p>7. The e-mail address where you receive our newsletter is the only personal data that we have. To correct the address, send an e-mail to <strong>dolija@dolija.com</strong> or enter the new e-mail address on our web page.</p>
+                <!--p><strong>8. Da li možete zatražiti eksport svih svojih podataka koji se nalaze u našem sustavu?</strong></p-->
+                <p>8. You can request the export of all your data contained in our archive by sending an email to <strong>dolija@dolija.com</strong>.</p>
+                <!--p><strong>9. Da li se moji podaci automatski profiliraju i zašto?</strong></p-->
+                <p>9. The content of our newsletter is identical for all recipients. Its sole purpose is to improve our service and experience of our site. Its automated processing does not produce any legal effect and should not be reflected on you in any way.</p>
+                <!--p><strong>10. Kome se mogu žaliti ako mislim da kršite moje pravo na privatnost?</strong></p-->
+                <p>10. In case you believe that Dolija 08 d.o.o. is obstructing your right to privacy you can file a complaint with the Consumer Protection Agency on <a class="my-cust-link" href="https://azop.hr">this address</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer my-modal-footer">
+            <button type="button" id="newsletter-modal-close" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

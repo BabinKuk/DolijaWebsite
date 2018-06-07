@@ -380,16 +380,33 @@
       </div>
     </section>
     
-		<div class="ignite-cta text-center">
+		<!--div class="ignite-cta text-center">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <a href="#olive-oil-awards"><h1 class="ignite-btn">Dolija - Vrhunska kvaliteta koja se prepoznaje</h1></a>
+            <h1 class="ignite-btn"><i class="fa fa-paper-plane"></i><p>Subscribe to stay in the loop</p></h1>
+            <p></p><a class="button" data-target="#newsletterModal" data-toggle="modal"><h1>Sign Up</h1></a></p>
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
+    <section id="subscribe" class="subscribe text-center">
+      <div class="container">
+        <h1><i class="fa fa-paper-plane"></i></h1>
+        <h1 class="subscribe-header">Ostanimo u kontaktu</h1>
+        <p class="subscribe-desc">Prijavite se na naš newsletter, budite u toku s novostima i ostvarite ekskluzivne pogodnosti</p>
+        <form id="subscribe-form" name="subscribe-form" method="post" action="#">
+          <input type="email" name="subscribe-email" id="subscribe-email" value="" placeholder="" required>
+          <input type="submit" id="subscribe-btn" name="subscribe-btn" value="Pošalji">
+          <p class="subscribe-confirm">
+            <input type="checkbox" aria-label="Uvjeti korištenja" required>
+            <span>Pročitao/la sam i prihvaćam <a data-target="#newsletterModal" data-toggle="modal">Uvjete korištenja</a></span>
+          </p>
+        </form>
+      </div>
+    </section>
+        
     <section class="text-center" id="olive-oil-awards">
       <div class="container-fluid nopadding awards-services">
         <div class="wrapper">
@@ -1944,7 +1961,7 @@
               <div class="form-group">
                 <textarea name="message" id="message" class="form-control" rows="8" placeholder="Poruka" required></textarea>
               </div>
-              <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default">Pošalji</button>
+              <button id="msg-submit" name="msg-submit" type="submit" class="btn btn-default" value="Pošalji">Pošalji</button>
             </form>
           </div>
           <div class="modal-footer my-modal-footer">
@@ -2095,6 +2112,52 @@
             
           <div class="modal-footer my-modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header my-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="my-modal-close" aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="newsletterModalLabel">Newsletter uvjeti korištenja</h4>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center">Newsletter uvjeti korištenja</h2>
+            <div class="newsletter-terms">
+              <p>Internet stranica dolija.com čiji je vlasnik Dolija 08 d.o.o., Veliki Vareški 1, 52208 Krnica, Hrvatska, garantira da su svi podaci koje s nama dijelite zaštićeni poštujući najnoviju GDPR - regulativu o zaštiti privatnosti i to prema dolje navedenim principima.</p>
+              <div>
+                <p><strong>1. Koji Vaši podaci nam trebaju i zašto?</strong></p>
+                <p>Za slanje promotivnih ponuda i obavijesti putem newslettera potreban nam je vaš e-mail koji ćemo korisiti isključivo u tu svrhu.</p>
+                <p><strong>2. Tko sve ima pristup Vašim podacima?</strong></p>
+                <p>
+                  Pristup Vašim osobnim podacima ima samo dio naših zaposlenika koji rade na održavanju internet stranice.
+                  Navedeni zaposlenici upoznati su sa procedurama zaštite osobnih podataka i dužni su postupati po istima.
+                </p>
+                <p><strong>3. Da li ćemo Vaše podatke dijeliti s drugima?</strong></p>
+                <p>Vaši podaci su kod nas sigurni i nećemo ih djeliti, prodavati ili ustupati drugim privatnim ili pravnim osobama za druge namjene osim gore navedenih.</p>
+                <p><strong>4. Koliko dugo ćemo čuvati Vaše podatke?</strong></p>
+                <p>Dok ne zatražite da ih uklonimo.</p>
+                <p><strong>5. Kako smo došli do Vaših podataka?</strong></p>
+                <p>Sve navedene osobne podatke ste nam dali sami. Dolija 08 d.o.o. ni na koji način ne prikuplja/kupuje/nabavlja vaše osobne podatke od trećih osoba.</p>
+                <p><strong>6. Da li i možete zatražiti da zauvijek uklonimo Vaše podatke i povući svoju privolu za njihovo korištenje?</strong></p>
+                <p>Da, kada god želite možete povući privolu za korištenje svojih osobnih podataka i/ili od nas zatražiti da izbrišemo sve Vaše podatke iz našeg sustava. Dovoljno je da nam pošaljete email na <strong>dolija@dolija.com</strong> i svi Vaši osobni podaci bit će izbrisani u najkraćem mogućem roku.</p>
+                <p><strong>7. Da li možete vidjeti koje Vaše osobne podatke imamo i možete li ih ispraviti?</strong></p>
+                <p>Email na koji primate naš newsletter je jedini Vaš osobni podatak koji imamo. Za promjenu istog dovoljno je da nam pošaljete email na <strong>dolija@dolija.com</strong> ili da unesete novi email na našoj stranici.</p>
+                <p><strong>8. Da li možete zatražiti eksport svih svojih podataka koji se nalaze u našem sustavu?</strong></p>
+                <p>Da, u bilo kojem trenutku možete nam poslati zahtjev na email <strong>dolija@dolija.com</strong></p>
+                <p><strong>9. Da li se moji podaci automatski profiliraju i zašto?</strong></p>
+                <p>Sadržaj newslettera isti je za sve primatelje. Isključiva svrha mu je unapređenje naše usluge i vašeg doživljaja korištenja naše stranice. Ova automatizirana obrada ne proizvodi nikakve pravne učinke i ne bi trebala utjecati značajno na vas.</p>
+                <p><strong>10. Kome se mogu žaliti ako mislim da kršite moje pravo na privatnost?</strong></p>
+                <p>Možete se žaliti Agenciji za zaštitu prava potrošača i to na linku <a class="my-cust-link" href="https://azop.hr">ovdje</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer my-modal-footer">
+            <button type="button" id="newsletter-modal-close" class="btn btn-default" data-dismiss="modal">Zatvori</button>
           </div>
         </div>
       </div>
