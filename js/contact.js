@@ -114,7 +114,8 @@ $(function() {
 
 	//get the value of clicked button
 	var subscribe_btn;
-		
+	
+	// ne koristi se, submit ide preko mailchimp servisa
 	subscribe_form.submit(function() {
 		event.preventDefault();
 
@@ -153,6 +154,8 @@ $(function() {
 		
 	 	//console.log('1: ' + email, '2: ' + name,'3: ' + subject,'4: ' + message);
 	
+		//console.log($(this).attr('action'));
+		
 		$.ajax({
 			//url: $(this).attr('action'),
 			url: "././mail/contact.php",
@@ -177,9 +180,9 @@ $(function() {
 				$('#subscribe-form').trigger("reset");
 
 				// reload page
-				setTimeout(function() {
-					window.location.reload();
-				}, 3000);
+				//setTimeout(function() {
+				//	window.location.reload();
+				//}, 3000);
 			},
 			error: function() {
 				// Fail message
@@ -189,9 +192,9 @@ $(function() {
 				$('#subscribe-form').trigger("reset");
 
 				// reload page
-				setTimeout(function() {
-					window.location.reload();
-				}, 3000);
+				//setTimeout(function() {
+				//	window.location.reload();
+				//}, 3000);
 			}
 		}).done(function(data){
 			form_status.html('<p class="text-success subscribe-submit-msg">' + doneMsg + '</p>').delay(3000).fadeOut();
