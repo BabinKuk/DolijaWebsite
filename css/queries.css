@@ -20,6 +20,8 @@
 	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+	#awardsSlider ol {display: none;}
+	#awardsSlider {margin-top: 10px;}
 }
 @media screen and (max-width:768px) {
 	/*ul.slides li { padding-left: -10px; padding-right: -10px;}*/
@@ -33,6 +35,13 @@
 @media screen and (max-width:560px) {
 	.nagrade-item > .col-md-2, .col-xs-2 {display: none;}
 	.nagrade-item > .col-md-10, .col-xs-10 {width:100%;}
+	.swag h1 {font-size: 20px;}
+	.intro h1 {font-size: 20px;}
+	.featuresHeader h1 {font-size: 30px;}
+	.subscribe h1 {font-size: 20px; font-weight: bold;}
+	.subscribe h1 span {font-size: 20px; font-weight: bold;}
+	#awardsSlider ol, #carouselGallery ol {display: none;}
+	#awardsSlider {margin-top: 5px;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {

@@ -594,6 +594,9 @@ Modal
 	color: #aeb87a;
 	text-shadow: none;
 }
+.my-carousel-control>span {
+	margin: auto;
+}
 .my-carousel-control.right {
 	border-left: 2px solid #ddd;
 	background-image: none;
